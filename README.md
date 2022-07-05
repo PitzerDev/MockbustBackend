@@ -1,4 +1,7 @@
-# DB Info
+# Setup
+	Run the compose command from project's root directory
+		docker compose up -d
+	
 	Host: localhost
 	Port: 5555
 	User: postgres
@@ -22,6 +25,8 @@
 	
 	//Review filters
 	router.HandleFunc("/api/film/reviews/{id}", middleware.GetReviewsByFilm).Methods("GET", "OPTIONS")
+
+Upon initial run of main.go the review table will be created. There is no data in this table to start, in order to use GetAllReview or GetReviewsByFilm you must create review data.
 
 # Example Create Customer Review for Film by film_id
 
