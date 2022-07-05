@@ -1,6 +1,6 @@
 # Routes
 
-//Routes for film
+	//Routes for film
 	router.HandleFunc("/api/film/{id}", middleware.GetFilm).Methods("GET", "OPTIONS")
 	router.HandleFunc("/api/film", middleware.GetAllFilm).Methods("GET", "OPTIONS")
 	//Film filters
