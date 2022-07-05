@@ -18,10 +18,12 @@
 
 # Create Customer Review for Film by film_id
 
-	{
-	    "review_id":"1",
-	    "review_text":"Testing New Review Insertion",
-	    "rating":"5",
-	    "customer_id":"3",
-	    "film_id":"8"
-	}
+	URL: http://localhost:8080/api/newreview
+	Body:
+		{
+		    "review_id":"1",
+		    "review_text":"Testing New Review Insertion",
+		    "rating":"5",
+		    "customer_id":"3",
+		    "film_id":"8"
+		}
