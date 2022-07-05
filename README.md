@@ -1,3 +1,10 @@
+# DB Info
+	Host: localhost
+	Port: 5555
+	User: postgres
+	Password: postgres
+	Database: dvdrental
+
 # Routes
 
 	//Routes for film
@@ -16,7 +23,7 @@
 	//Review filters
 	router.HandleFunc("/api/film/reviews/{id}", middleware.GetReviewsByFilm).Methods("GET", "OPTIONS")
 
-# Create Customer Review for Film by film_id
+# Example Create Customer Review for Film by film_id
 
 	URL: http://localhost:8080/api/newreview
 	Body:
